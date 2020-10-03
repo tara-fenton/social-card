@@ -16,7 +16,30 @@
 /* avatar styles */
 .avatar {
   width: 65px;
+  padding: 2px 10px;
 }
+/* top info styles */
+.top-info-name {
+  font-weight: bold;
+  padding: 4px 5px 0 0;
+}
+.top-info-handle,
+.top-info-date {
+  color: grey;
+  padding: 4px 5px 0 0;
+}
+.top-info-title {
+  padding: 5px 0 3px;
+}
+.top-info-author {
+  padding: 0 0 10px 0;
+}
+.top-info-author-link a:link,
+.top-info-author-link a:visited {
+  text-decoration: none;
+  color: #65b3e8;
+}
+
 /* card styles */
 .card {
   border: 1px solid rgba(128, 128, 128, 0.2);
@@ -25,9 +48,7 @@
 .card-image {
   border-radius: 5px 5px 0 0;
 }
-/* .card-img-bk {
-  background-color: #fca000;
-} */
+
 .info {
   padding: 5px 0 10px;
 }
@@ -44,4 +65,37 @@
   color: grey;
   padding: 4px 14px 2px;
   text-decoration: none;
+}
+
+/* social bar styles */
+
+.social-image {
+  width: 25px;
+  padding: 0 10px 0 0;
+}
+.social-bar-comments {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.social-bar-retweet {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: mediumaquamarine;
+}
+.social-bar-favorite {
+  display: flex;
+  color: crimson;
+}
+.social-bar-dm {
+  /* display: flex; */
+}
+.social-bar {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px 20px 0;
+  align-items: center;
 }

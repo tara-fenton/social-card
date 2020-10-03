@@ -6,9 +6,7 @@ class Card extends Component {
     let dynamicImage = images(`./${this.props.card.image}.jpg`);
     return (
       <div className="card">
-        <div className="card-img-bk">
-          <img className="card-image" src={dynamicImage} />
-        </div>
+        <img className="card-image" src={dynamicImage} />
         <div className="info">
           <div className="card-title">{this.props.title}</div>
           <div className="card-description">{this.props.card.description}</div>
