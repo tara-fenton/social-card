@@ -7,7 +7,7 @@ class Card extends Component {
     return (
       <div className="card">
         <img className="card-image" src={dynamicImage} />
-        <div className="info">
+        <div className="card-info">
           <div className="card-title">{this.props.title}</div>
           <div className="card-description">{this.props.card.description}</div>
           <div className="card-link">

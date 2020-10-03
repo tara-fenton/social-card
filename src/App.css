@@ -1,13 +1,8 @@
 .App {
-  /* width: 700px; */
+  width: 700px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 20%;
 }
-/* .Aligner-item {
-  max-width: 50%;
-} */
 .container {
   display: flex;
   flex-direction: row;
@@ -49,7 +44,7 @@
   border-radius: 5px 5px 0 0;
 }
 
-.info {
+.card-info {
   padding: 5px 0 10px;
 }
 .card-title {
@@ -68,34 +63,24 @@
 }
 
 /* social bar styles */
-
+.social-bar {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px 20px 0;
+  align-items: center;
+}
 .social-image {
   width: 25px;
   padding: 0 10px 0 0;
 }
 .social-bar-comments {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
 }
 .social-bar-retweet {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
   color: mediumaquamarine;
 }
 .social-bar-favorite {
   display: flex;
   color: crimson;
-}
-.social-bar-dm {
-  /* display: flex; */
-}
-.social-bar {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 20px 30px 20px 0;
-  align-items: center;
 }
