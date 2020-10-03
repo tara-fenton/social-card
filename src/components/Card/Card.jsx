@@ -5,11 +5,19 @@ class Card extends Component {
   render() {
     let dynamicImage = images(`./${this.props.card.image}.jpg`);
     return (
-      <div className="container">
-        <img src={dynamicImage} />
-        <div>{this.props.card.info}</div>
-        <div>{this.props.card.description}</div>
-        <div>{this.props.card.link}</div>
+      <div className="card">
+        <div className="card-img-bk">
+          <img className="card-image" src={dynamicImage} />
+        </div>
+        <div className="info">
+          <div className="card-title">{this.props.title}</div>
+          <div className="card-description">{this.props.card.description}</div>
+          <div className="card-link">
+            <a href={`http://${this.props.card.link}`}>
+              {this.props.card.link}
+            </a>
+          </div>
+        </div>
       </div>
     );
   }

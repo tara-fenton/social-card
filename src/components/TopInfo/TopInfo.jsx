@@ -3,7 +3,7 @@ import React from "react";
 const TopInfo = (props) => (
   <div>
     <div className="container">
-      <div>{props.topInfo.name}</div>
+      <div className="title">{props.topInfo.name}</div>
       <div>{props.topInfo.handle}</div>&middot;
       <div>{props.topInfo.date}</div>
     </div>

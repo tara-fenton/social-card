@@ -1,13 +1,47 @@
+.App {
+  /* width: 700px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+/* .Aligner-item {
+  max-width: 50%;
+} */
 .container {
   display: flex;
   flex-direction: row;
+  width: 500px;
 }
-
+/* avatar styles */
 .avatar {
   width: 65px;
 }
-
-.left {
-  display: flex;
-  flex-direction: row;
+/* card styles */
+.card {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+}
+.card-image {
+  border-radius: 5px 5px 0 0;
+}
+/* .card-img-bk {
+  background-color: #fca000;
+} */
+.info {
+  padding: 5px 0 10px;
+}
+.card-title {
+  font-weight: bold;
+  padding: 4px 14px;
+}
+.card-description {
+  padding: 4px 4px 4px 14px;
+  line-height: 1.4;
+}
+.card-link a:link,
+.card-link a:visited {
+  color: grey;
+  padding: 4px 14px 2px;
+  text-decoration: none;
 }
