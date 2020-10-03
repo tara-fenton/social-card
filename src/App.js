@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Avatar from "./components/Avatar/Avatar";
 import Card from "./components/Card/Card";
 import SocialBar from "./components/SocialBar/SocialBar";
 import TopInfo from "./components/TopInfo/TopInfo";
@@ -9,7 +10,7 @@ class App extends Component {
     super();
     this.state = {
       tweetData: {
-        avatar: "",
+        avatar: "avatar-dev",
         title: "Learning React? Start Small",
         topInfo: {
           name: "The Practical Dev",
@@ -18,7 +19,7 @@ class App extends Component {
           author: "@dceddia",
         },
         card: {
-          image: "",
+          image: "social-card-image",
           description:
             "Can't pry yourself away from the tutorials? The cure is to make tiny little experiment apps.",
           link: "dev.to",
@@ -34,16 +35,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <TopInfo
-          topInfo={this.state.tweetData.topInfo}
-          title={this.state.tweetData.title}
-        />
-        <Card
-          card={this.state.tweetData.card}
-          title={this.state.tweetData.title}
-        />
-        <SocialBar socialBar={this.state.tweetData.socialBar} />
+      <div>
+        <div className="left">
+          <Avatar avatar={this.state.tweetData.avatar} />
+        </div>
+        <div>
+          <TopInfo
+            topInfo={this.state.tweetData.topInfo}
+            title={this.state.tweetData.title}
+          />
+          <Card
+            card={this.state.tweetData.card}
+            title={this.state.tweetData.title}
+          />
+          <SocialBar socialBar={this.state.tweetData.socialBar} />
+        </div>
       </div>
     );
   }

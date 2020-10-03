@@ -1,7 +1,7 @@
 import React from "react";
 
 const SocialBar = (props) => (
-  <div className="social-bar">
+  <div className="container">
     <div>comments {props.socialBar.comments}</div>
     <div>retweets {props.socialBar.retweets}</div>
     <div>likes {props.socialBar.likes}</div>
