@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Avatar from "./components/Avatar/Avatar";
-import Card from "./components/Card/Card";
-import SocialBar from "./components/SocialBar/SocialBar";
-import TopInfo from "./components/TopInfo/TopInfo";
+import SocialCard from "./components/SocialCard/SocialCard";
 
 class App extends Component {
   constructor() {
@@ -36,22 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container">
-          <div>
-            <Avatar avatar={this.state.tweetData.avatar} />
-          </div>
-          <div>
-            <TopInfo
-              topInfo={this.state.tweetData.topInfo}
-              title={this.state.tweetData.title}
-            />
-            <Card
-              card={this.state.tweetData.card}
-              title={this.state.tweetData.title}
-            />
-            <SocialBar socialBar={this.state.tweetData.socialBar} />
-          </div>
-        </div>
+        <SocialCard tweetData={this.state.tweetData} />
       </div>
     );
   }
