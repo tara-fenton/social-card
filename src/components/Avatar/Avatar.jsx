@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 const images = require.context("../../../public/images/", true);
 
-class Avatar extends Component {
-  render() {
-    let dynamicImage = images(`./${this.props.avatar}.jpg`);
-    return <img className="avatar" src={dynamicImage} />;
-  }
-}
+const Avatar = (props) => {
+  let dynamicImage = images(`./${props.avatarImg}`);
+  return <img className="avatar" src={dynamicImage} />;
+};
 export default Avatar;
